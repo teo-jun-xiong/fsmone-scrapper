@@ -1,6 +1,6 @@
 # fsmone-scrapper
 
-This is a _pretty_ basic web scrapper for FSMone. Some background information: FSMone is an online brokerage and the intention behind this little project was due to the inability to set price targets and stop losses on the website. 
+This is a _pretty_ basic web scrapper for FSMOne. Some background information: FSMOne is an online brokerage and the intention behind this little project was due to the inability to set price targets and stop losses on the website. 
 
 I wanted those features in one place to remind myself of the various price points I set for the stocks I am invested in. 
 
