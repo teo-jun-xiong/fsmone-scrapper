@@ -1,5 +1,7 @@
 let arr = document.querySelectorAll("tbody")[7].querySelectorAll("td");
 let indices = [5, 8, 10, 11, 13, 14, 15];
+let numColumns = len(indices);
+let interval = 16
 let index = 0;
 let parsed = [];
 
@@ -11,7 +13,7 @@ for (let i = 0; i < arr.length; i++) {
     } else {
       parsed.push(arr[i].outerText);
     }
-    indices[index] += 16;
+    indices[index] += interval;
     index++;
   }
   if (index === indices.length) {
@@ -27,11 +29,12 @@ let foo = (a, b) => {
   }
 };
 
-let data = new Array(parsed.length / 7)
+let data = new Array(parsed.length / numColumns)
   .fill()
-  .map((_) => parsed.splice(0, 7))
+  .map((_) => parsed.splice(0, numColumns))
   .sort(foo);
 
+// for price target and stop loss
 for (let i = 1; i < data.length; i++) {
   data[i].push("0");
   data[i].push("0");
